@@ -8,6 +8,20 @@ A collection of pages created to visualize bootstrap elements in MediaWiki, whet
 
 # Pre-configuration
 
+## Pure Bootstrap
+To simply enable Bootstrap styles on all pages add the following code to your `LocalSettings.php` file: 
+```php
+$wgHooks['SetupAfterCache'][] = function(){
+	\Bootstrap\BootstrapManager::getInstance()->addAllBootstrapModules();
+	return true;
+};
+$wgHooks['ParserAfterParse'][]=function( Parser &$parser, &$text, StripState &$stripState ){
+	$parser->getOutput()->addModuleStyles( 'ext.bootstrap.styles' );
+	$parser->getOutput()->addModules( 'ext.bootstrap.scripts' );
+	return true;
+};
+```
+
 ## Pure Bootstrap (bundled)
 Bootstrap comes bundled with the Chameleon skin. Once installed and enabled Chameleon, the package will display the default Bootstrap elements.
 
