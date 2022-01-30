@@ -21,12 +21,11 @@ $wgHooks['ParserAfterParse'][]=function( Parser &$parser, &$text, StripState &$s
 	return true;
 };
 ```
-
 ## Pure Bootstrap (bundled)
-Bootstrap comes bundled with the Chameleon skin. Once installed and enabled Chameleon, the package will display the default Bootstrap elements.
+Bootstrap comes bundled with the Chameleon skin, just install and enable Chameleon.
 
 ## Bootswatch
-To apply a Bootswatch for Bootstrap 4, put the files (`_variables.scss` and `_bootswatch.scss`) in:
+Pure Bootstrap methods will let the package will display the default Bootstrap elements. To apply a **Bootswatch** for Bootstrap 4, put the files (`_variables.scss` and `_bootswatch.scss`) in:
 ```php
 extensions/CONTRACTHOLDER/skins/SKINNAME/bootswatch
 ```
@@ -65,3 +64,6 @@ php extensions/PagePort/maintenance/importPages.php --source ~/mediawiki-pages-B
 $wgPageExchangePackageFiles[] = 'https://raw.githubusercontent.com/WikiTeq/mediawiki-pages-BootstrapTest/master/page-exchange.json';
 ```
 * Navigate to Special:Packages and install the package
+
+# Usage
+Navigate to `Project:Bootswatch` and see the sample elements with the Bootstrap/Bootswatch styling.
