@@ -27,25 +27,22 @@ Bootstrap comes bundled with the Chameleon skin, just install and enable Chamele
 ## Bootswatch
 Pure Bootstrap methods will let the package will display the default Bootstrap elements. To apply a **Bootswatch** for Bootstrap 4, put the files (`_variables.scss` and `_bootswatch.scss`) in:
 ```php
-extensions/CONTRACTHOLDER/skins/SKINNAME/bootswatch
+path/relative/to/wikiroot/bootswatch
 ```
-where:
-* `CONTRACTHOLDER` = WikiTeq or WikiWorks depending on the project
-* `SKINNAME` = chameleon or other Bootstrap enabled skin
 
 Add the following to the `LocalSettings.php` for PHP 7.3 Chameleon < 3.4:
 ```php
 $egChameleonExternalStyleModules = [
-     "$IP/extensions/WikiTeq/skins/chameleon/bootswatch/_variables.scss" => 'afterFunctions', 
-     "$IP/extensions/WikiTeq/skins/chameleon/bootswatch/_bootswatch.scss" => 'afterMain'
+     $IP . '/path/relative/to/wikiroot/bootswatch/_variables.scss' => 'afterFunctions', 
+     $IP . '/path/relative/to/wikiroot/bootswatch/_bootswatch.scss' => 'afterMain'
 ];
 ```
 
 Add the following to the `LocalSettings.php` for PHP 7.4 Chameleon ^3.4:
 ```php
-$egChameleonThemeFile = __DIR__ . '/skins/chameleon/bootswatch/_variables.scss';
+$egChameleonThemeFile = $IP . '/path/relative/to/wikiroot/bootswatch/_variables.scss';
 $egChameleonExternalStyleModules = [
-        __DIR__ . '/skins/chameleon/bootswatch/_bootswatch.scss' => 'afterMain',
+        $IP . '/path/relative/to/wikiroot/bootswatch/_bootswatch.scss' => 'afterMain',
 ];
 ```
 
