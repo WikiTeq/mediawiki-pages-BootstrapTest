@@ -64,3 +64,4 @@ $wgPageExchangePackageFiles[] = 'https://raw.githubusercontent.com/WikiTeq/media
 
 # Usage
 Navigate to `Project:Bootswatch` and see the sample elements with the Bootstrap/Bootswatch styling.
+

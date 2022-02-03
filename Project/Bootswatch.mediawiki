@@ -1,2 +1,0 @@
-{{#widget:Bootswatch}}
-__NOTOC__
