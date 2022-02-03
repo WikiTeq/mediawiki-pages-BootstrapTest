@@ -1,0 +1,1 @@
+[[Project:Bootswatch]] is a page created to visualize bootstrap elements, whether with the active bootswatch or without it. It makes use of [[Widget:Bootswatch]]. For configuration settings and dependencies see [https://github.com/WikiTeq/mediawiki-pages-BootstrapTest/blob/master/README.md README.md] in the package repo.
