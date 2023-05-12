@@ -4,8 +4,8 @@
 	"language": "en",
 	"url": "https://github.com/WikiTeq/mediawiki-pages-BootstrapTest",
 	"packages": {
-		"Bootstrap Test": {
-			"globalID": "1643564309",
+		"BootstrapTest": {
+			"globalID": "com.wikiteq.BootstrapTest",
 			"description": "A collection of pages created to visualize bootstrap elements, whether with the active bootswatch or without it.",
 			"version": "0.1",
 			"pages": [
